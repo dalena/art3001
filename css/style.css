@@ -1,0 +1,705 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+@font-face {
+    font-family: MrPixel;
+    src: url(/fonts/MisterPixelRegular.otf);
+}
+@font-face {
+    font-family: Neuebit;
+    src: url(/fonts/NeueBit-Bold.otf);
+}
+
+html {
+    /* filter: invert(80%); */
+    background-image: linear-gradient(180deg, #000 20%, #000 80%, #2600ff 140%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url("../img/bg7.png") no-repeat top center;
+    background-size: 100% 40%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
+    line-height: 1.7em;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+
+}
+
+.wrapper {
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2 !important;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.block {
+    display: none;
+}
+
+a,
+.button {
+    color: #000;
+    background: #00ffdddc;
+    text-decoration: none;
+
+    /* border-bottom: 1px black solid; */
+    cursor: pointer;
+    transition: all 0.8s ease;
+}
+
+a:hover,
+.button:hover {
+    background: url('../img/hov7.gif');
+    color: #000;
+    border: 1px solid;
+    box-shadow: 5px 5px;
+    cursor: pointer;
+}
+
+
+
+h1 a {
+    text-decoration: none;
+    font-family: 'Neuebit', sans-serif;
+
+}
+
+h2.centFocus {
+    color: #fff;
+    text-align: center;
+    margin-top: 2em;
+    transition: all 0.5s ease;
+    font-family: 'Neuebit', sans-serif;
+
+}
+
+h2.centFocus:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.headingText {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+}
+
+.headingText h4 {
+    text-align: center;
+    font-size: 1.2em;
+}
+}
+
+.headingText h4:not(:last-child) {
+    padding-right: 2em;
+}
+
+.content {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+nav {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+nav li {
+    color: #000;
+    font-family: 'Neuebit', sans-serif;
+    display: inline-block;
+    font-size: 1.2em;
+    margin-right: 0.5em;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-transform: uppercase;
+    font-family: 'Neuebit', sans-serif;
+    letter-spacing: .1em;
+}
+
+h1 {
+    margin-bottom: 1em;
+    padding: 0;
+    text-decoration: none;
+    /* font-weight: normal; */
+    font-size: 2.7.em;
+    line-height: 2em;
+    text-align: center;
+}
+
+h2 {
+    /* font-weight: normal; */
+    font-size: 1.95em;
+    margin-top: 0;
+}
+
+
+h3 {
+    text-transform: uppercase;
+    font-size: 1.55em;
+    font-weight: normal;
+
+}
+
+#syllabus h3,
+table {
+    margin-top: 2em;
+
+}
+
+
+
+h4 {
+    font-weight: normal;
+    margin: 0;
+}
+
+.highlight {
+    background: #ff00ff86;
+}
+
+.hiHybrid {
+    background: #ff7575a8;
+}
+
+.hiExer {
+    background: #23ffffa2;
+
+
+}
+
+.hiTask {
+    background: #7f7fffa2;
+}
+
+.hiProj {
+    background: #2bb700a2;
+}
+
+.hiExtend {
+    background: #a1ffffa8;
+
+}
+
+.hiGrade a {
+    background: none;
+    border-bottom: 2px solid #ff00ffb4;
+    color: #fff;
+}
+
+.hiNoClass {
+    background: #ff004cab;
+
+}
+
+
+nav ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+.weekBox {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.toggle h4 {
+    /* font-weight: bold; */
+}
+
+
+
+p {
+    /* padding: 0; */
+    margin: 0;
+    /* margin-bottom: 1em; */
+}
+
+section {
+    padding-bottom: 2em;
+}
+
+.imgExBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgEx {
+    width: 100%;
+    /*or whatever you choose*/
+    margin: 0;
+    text-align: center;
+}
+
+.imgEx img {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    /*actual image width*/
+    height: auto;
+    /* maintain aspect ratio*/
+    margin: auto;
+    /*optional centering of image*/
+}
+
+h5.sWorks  {
+    text-align: center;
+}
+
+#schedule h3,
+#projects h3,
+#exercises h3 {
+    padding: .3em;
+    margin: 0.5em 0;
+    display: block;
+    clear: both;
+}
+
+#schedule a {
+    color: #fff;
+    background: transparent;
+    border-bottom: 2px solid #8c00ff;
+    transition: all 0.5s ease;
+}
+
+#schedule a:hover {
+    color: #000;
+    background: #ca44ff;
+    border: 1px solid;
+    box-shadow: 2px 2px;
+}
+
+#schedule h5 {
+    font-size: 1.2em;
+    margin: 0;
+    line-height: 2.2em;
+}
+
+#projects ul {
+    margin-top: 0;
+}
+
+#schedule ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#schedule li {
+    line-height: 1.4em;
+}
+
+img {
+    max-width: 100%;
+}
+
+li img {
+    margin: 0.5em 0;
+}
+
+table {
+    width: 100%;
+}
+
+tr {
+    vertical-align: top;
+}
+
+.grading td:nth-child(1) {
+    width: 2%;
+    font-weight: bold;
+}
+
+.grading td:nth-child(2) {
+    width: 7%;
+    text-align: center;
+}
+
+.grading td {
+    width: 70%;
+    word-break: break-all;
+
+}
+
+#schedule .tg {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* #schedule .sWeek{
+    min-width: 100px;
+}
+#schedule .sDate{
+    min-width: 50px;
+}
+#schedule .sProgram{
+    min-width: 600px;
+} */
+#schedule .tg td {
+    border: solid #ffffff52 1px;
+    font-family: 'Source Sans Pro', monospace;
+    font-size: .95em;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+#schedule .tg th {
+    /* border: solid #ffffff52 1px; */
+    font-family: 'Neuebit', monospace;
+    font-size: 1.4em;
+    font-weight: thin;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+    background: #c300ff80;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.tbOver {
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.tg-0lax {
+    background: #000000;
+    font-family: 'Source Sans Pro', sans-serif
+}
+
+.tbFund {
+    background: #ff00ff1a;
+}
+
+.tbWild {
+    background: #00ffff1a;
+}
+
+.tbDir {
+    background: #ff00ff1a;
+}
+
+.tbFin {
+    background: #00ffff1a;
+}
+
+#schedule>h4 {
+    margin: 0 auto;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+#schedule>ul,
+#schedule>li {
+    line-height: 20px;
+    font-size: 16px;
+    margin: 0 auto;
+    line-height: 25px;
+
+}
+
+ol li {
+    margin-bottom: 1em;
+}
+
+#meetings {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+#meetings tr:nth-child(1) {
+    text-decoration: underline;
+}
+
+#meetings td:nth-child(1) {
+    font-weight: normal;
+}
+
+#meetings td:nth-child(2) {
+    min-width: 6em;
+}
+
+.spacer {
+    height: 1em;
+}
+
+.weekspacer {
+    height: 3em;
+}
+
+
+#projects div {
+    width: 100%;
+    float: left;
+    margin-bottom: 1em;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+
+.label {
+    font-weight: bold;
+}
+
+
+pre {
+    line-height: 1.45em;
+}
+
+#bird-cnv {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+
+#updated {
+    width: 100%;
+    text-align: right;
+    color: #5f5f5f;
+    position: relative;
+    right: -1.5em;
+    bottom: -1.5em;
+}
+
+.toggle {
+    /* transition: height 0.5s ease; */
+    margin-left: 1em;
+    border-left: 2px solid rgb(255, 255, 255);
+    padding-left: 1em;
+}
+
+
+.toggles {
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    background: #c800ff9b;
+    /* display: inline-block; */
+}
+
+.toggles:hover {
+    background: #f700ffce;
+    /* border-bottom: 1.75px solid #f3b328; */
+    /* color: #fff; */
+
+}
+
+.headLink {
+    border: none;
+}
+
+.headLink:hover {
+    border: none;
+}
+
+.parWrap {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    /* width: 100%; */
+    /* height: 100%; */
+
+}
+
+
+
+.finProject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+@media screen and (max-width: 800px) {
+    body {
+        padding: 1em;
+        /* font-size: 1.1em; */
+    }
+
+    h1 {
+        font-size: 1.5em;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .centFocus {
+        margin-top: 0px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    #projects h3,
+    #schedule h3,
+    #exercises h3 {
+        font-size: 1em;
+    }
+
+
+    #links {
+        text-align: center;
+        padding: 0px;
+    }
+
+    nav {
+        width: 100%;
+        left: 0;
+        margin-top: 2em;
+        margin-bottom: 3em;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul {
+        padding-inline-start: 20px;
+        margin-block-end: 0em;
+
+
+    }
+
+    .headingText {
+        display: initial;
+        text-align: center;
+    }
+
+    .headingText h4:not(:last-child) {
+        padding: 0px;
+    }
+
+    .weekBox {
+        flex-direction: column;
+
+    }
+
+    .content {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+
+}
+
+@media screen and (max-width: 1110px) {
+    #bird-cnv {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .parWrap {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1600px) {
+
+    .final {
+        display: inline-block;
+    }
+
+}
+
+@media screen and (max-width: 1900px) {
+
+}
+
+.print {
+    display: none;
+}
+
+@media print {
+    html {
+        background: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    body {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+        line-height: 1em
+    }
+
+    .centFocus {
+        margin-top: 0;
+    }
+
+    a,
+    button {
+        background: none;
+        border: none;
+    }
+
+    .headingText {
+        justify-content: center;
+    }
+
+    .print {
+        display: inline-block;
+        padding-bottom: .1em;
+        border-bottom: 1px solid black;
+    }
+
+}
