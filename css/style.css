@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: MrPixel;
-    src: url(fonts/MisterPixelRegular.otf);
+    src: url(../fonts/MisterPixelRegular.otf);
 }
 @font-face {
     font-family: Neuebit;
-    src: url(fonts/NeueBit-Bold.otf);
+    src: url(../fonts/NeueBit-Bold.otf);
 }
 
 html {
