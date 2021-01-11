@@ -4,6 +4,7 @@
     font-family: MrPixel;
     src: url(../fonts/MisterPixelRegular.otf);
 }
+
 @font-face {
     font-family: Neuebit;
     src: url(../fonts/NeueBit-Bold.otf);
@@ -56,7 +57,7 @@ body {
     display: none;
 }
 
-a,
+#syllabus a,
 .button {
     color: #000;
     background: #00ffdddc;
@@ -75,7 +76,6 @@ a:hover,
     box-shadow: 5px 5px;
     cursor: pointer;
 }
-
 
 
 h1 a {
@@ -108,7 +108,7 @@ h2.centFocus:hover {
     text-align: center;
     font-size: 1.2em;
 }
-}
+
 
 .headingText h4:not(:last-child) {
     padding-right: 2em;
@@ -173,7 +173,6 @@ h3 {
     text-transform: uppercase;
     font-size: 1.55em;
     font-weight: normal;
-
 }
 
 #syllabus h3,
@@ -182,50 +181,13 @@ table {
 
 }
 
-
-
 h4 {
+    font-size: 1.3em;
     font-weight: normal;
     margin: 0;
 }
 
-.highlight {
-    background: #ff00ff86;
-}
 
-.hiHybrid {
-    background: #ff7575a8;
-}
-
-.hiExer {
-    background: #23ffffa2;
-
-
-}
-
-.hiTask {
-    background: #7f7fffa2;
-}
-
-.hiProj {
-    background: #2bb700a2;
-}
-
-.hiExtend {
-    background: #a1ffffa8;
-
-}
-
-.hiGrade a {
-    background: none;
-    border-bottom: 2px solid #ff00ffb4;
-    color: #fff;
-}
-
-.hiNoClass {
-    background: #ff004cab;
-
-}
 
 
 nav ul {
@@ -234,22 +196,8 @@ nav ul {
 
 }
 
-.weekBox {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-.toggle h4 {
-    /* font-weight: bold; */
-}
-
-
-
 p {
-    /* padding: 0; */
     margin: 0;
-    /* margin-bottom: 1em; */
 }
 
 section {
@@ -280,31 +228,81 @@ section {
     /*optional centering of image*/
 }
 
-h5.sWorks  {
+h5.sWorks {
     text-align: center;
+}
+
+#schedule h2 {
+    margin: 10px;
+    font-size: 1.5em;
 }
 
 #schedule h3,
 #projects h3,
+#exercises h3,
+#discussions h3,
 #exercises h3 {
-    padding: .3em;
-    margin: 0.5em 0;
+    /* padding: .3em; */
+    /* margin: 0.5em 0; */
     display: block;
     clear: both;
 }
 
 #schedule a {
     color: #fff;
-    background: transparent;
     border-bottom: 2px solid #8c00ff;
     transition: all 0.5s ease;
 }
 
 #schedule a:hover {
+    /* color: #000; */
+    /* background: #00ffdddc; */
+    /* border: 1px solid; */
+    /* box-shadow: 2px 2px; */
+}
+
+
+.highlight {
+    background: #ff00ff86;
+}
+
+.hiHybrid {
+    background: #ff7575a8;
+}
+
+.hiExer {
+    background: #7dff2669;
+    color: #fff;
+}
+
+
+.hiProj {
+    background: #341dffd0;
+}
+
+.hiDis {
+    background: #c800ff60;
+}
+
+code {
+    background: #e5ff00c5;
     color: #000;
-    background: #ca44ff;
-    border: 1px solid;
-    box-shadow: 2px 2px;
+
+}
+
+.hiGrade a {
+    background: none;
+    border-bottom: 2px solid #ff00ffb4;
+    color: #fff;
+}
+
+.hiNoClass {
+    background: #ff004cab;
+
+}
+
+#discussions a, #projects a, #exercises a, #works a{
+    color: #fff;
 }
 
 #schedule h5 {
@@ -363,15 +361,6 @@ tr {
     border-spacing: 0;
 }
 
-/* #schedule .sWeek{
-    min-width: 100px;
-}
-#schedule .sDate{
-    min-width: 50px;
-}
-#schedule .sProgram{
-    min-width: 600px;
-} */
 #schedule .tg td {
     border: solid #ffffff52 1px;
     font-family: 'Source Sans Pro', monospace;
@@ -441,23 +430,6 @@ ol li {
     margin-bottom: 1em;
 }
 
-#meetings {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-}
-
-#meetings tr:nth-child(1) {
-    text-decoration: underline;
-}
-
-#meetings td:nth-child(1) {
-    font-weight: normal;
-}
-
-#meetings td:nth-child(2) {
-    min-width: 6em;
-}
-
 .spacer {
     height: 1em;
 }
@@ -513,7 +485,7 @@ pre {
 .toggles {
     cursor: pointer;
     transition: all 0.5s ease-in-out;
-    background: #c800ff9b;
+    background: #c800ff59;
     /* display: inline-block; */
 }
 
@@ -580,7 +552,8 @@ pre {
 
     #projects h3,
     #schedule h3,
-    #exercises h3 {
+    #exercises h3,
+    #discussions h3 {
         font-size: 1em;
     }
 
@@ -656,9 +629,7 @@ pre {
 
 }
 
-@media screen and (max-width: 1900px) {
-
-}
+@media screen and (max-width: 1900px) {}
 
 .print {
     display: none;
