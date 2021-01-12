@@ -1,4 +1,15 @@
 $(document).ready(function () {
+
+  $(".darkmode").click(function () {
+    $("html")
+      .toggleClass("dark") 
+      .css(
+        $("html").hasClass("dark") 
+          ? { filter: "invert(92%)" }
+          : { filter: "invert(0%)" } 
+      );
+  });
+
   $('#links .button').click(function () {
     var selected = '#' + $(this).data('id');
     openSection(selected);
@@ -20,14 +31,14 @@ $(document).ready(function () {
     openSection('#discussions', selected);
   });
 
-  $(function () {
-    $("#syllabusLoad").load("html/syllabus.html");
-    $("#scheduleLoad").load("html/schedule.html");
-    $("#discussionsLoad").load("html/discussions.html");
-    $("#exercisesLoad").load("html/exercises.html");
-    $("#projectsLoad").load("html/projects.html");
-    $("#studentworksLoad").load("html/studentworks.html");
-  });
+  // $(function () {
+  //   $("#syllabusLoad").load("html/syllabus.html");
+  //   $("#scheduleLoad").load("html/schedule.html");
+  //   $("#discussionsLoad").load("html/discussions.html");
+  //   $("#exercisesLoad").load("html/exercises.html");
+  //   $("#projectsLoad").load("html/projects.html");
+  //   $("#studentworksLoad").load("html/studentworks.html");
+  // });
 
   // $.get('date.json', function (data) {
   //   $('#updated_date').html(data.date);

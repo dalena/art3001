@@ -11,7 +11,7 @@
 }
 
 html {
-    /* filter: invert(80%); */
+    /* filter: invert(100%); */
     background-image: linear-gradient(180deg, #000 20%, #000 80%, #2600ff 140%);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -26,12 +26,28 @@ body {
     padding: 0;
     width: 100%;
     height: 100%;
-    font-size: 1.5em;
-    line-height: 1.7em;
+    font-size: 1.7em;
+    line-height: 1.8em;
     font-family: 'Source Sans Pro', sans-serif;
     color: #fff;
 
 }
+
+html div.darkmode {
+    display: inline-block;
+    text-shadow: 0 0 8px #00ffdd;
+    font-size: 2rem;
+    cursor: pointer;
+    
+}
+
+html.dark .darkmode .light,
+html:not(.dark) .darkmode .dark {
+    display: none;
+
+}
+
+
 
 .wrapper {
     position: relative;
@@ -57,15 +73,13 @@ body {
     display: none;
 }
 
-#syllabus a,
+a,
 .button {
     color: #000;
     background: #00ffdddc;
     text-decoration: none;
-
-    /* border-bottom: 1px black solid; */
     cursor: pointer;
-    transition: all 0.8s ease;
+    transition: all 0.5s ease;
 }
 
 a:hover,
@@ -73,8 +87,9 @@ a:hover,
     background: url('../img/hov7.gif');
     color: #000;
     border: 1px solid;
-    box-shadow: 5px 5px;
+    box-shadow: 5px 5px #00ffdddc;
     cursor: pointer;
+
 }
 
 
@@ -88,6 +103,7 @@ h2.centFocus {
     color: #fff;
     text-align: center;
     margin-top: 2em;
+    margin-bottom:0;
     transition: all 0.5s ease;
     font-family: 'Neuebit', sans-serif;
 
@@ -154,6 +170,7 @@ h4 {
 
 h1 {
     margin-bottom: 1em;
+    margin-top:0;
     padding: 0;
     text-decoration: none;
     /* font-weight: normal; */
@@ -186,10 +203,6 @@ h4 {
     font-weight: normal;
     margin: 0;
 }
-
-
-
-
 nav ul {
     margin: 0;
     padding: 0;
@@ -248,40 +261,35 @@ h5.sWorks {
     clear: both;
 }
 
-#schedule a {
-    color: #fff;
-    border-bottom: 2px solid #8c00ff;
-    transition: all 0.5s ease;
-}
-
-#schedule a:hover {
-    /* color: #000; */
-    /* background: #00ffdddc; */
-    /* border: 1px solid; */
-    /* box-shadow: 2px 2px; */
-}
-
-
 .highlight {
-    background: #ff00ff86;
+    background: #6031b6;
 }
 
-.hiHybrid {
-    background: #ff7575a8;
+.hiSub {
+    background: #6031b6;
+}
+.hiWeekly {
+    background: #ffffff31;
+    color: #8fb2ffec;
 }
 
 .hiExer {
-    background: #7dff2669;
+
+    background: #b8ff7ef1;
+    color: #000;
+}
+
+
+.hiProj,
+a.hiProj {
+    background: #341dffd0;
     color: #fff;
 }
 
-
-.hiProj {
-    background: #341dffd0;
-}
-
-.hiDis {
-    background: #c800ff60;
+.hiDis,
+a.hiDis {
+    background: #ff00ff86;
+    color: #fff;
 }
 
 code {
@@ -299,10 +307,6 @@ code {
 .hiNoClass {
     background: #ff004cab;
 
-}
-
-#discussions a, #projects a, #exercises a, #works a{
-    color: #fff;
 }
 
 #schedule h5 {
@@ -378,7 +382,7 @@ tr {
     overflow: hidden;
     padding: 10px 5px;
     word-break: normal;
-    background: #c300ff80;
+    background: #d13aff46;
     text-align: center;
     vertical-align: middle;
 
