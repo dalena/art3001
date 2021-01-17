@@ -343,7 +343,10 @@ table {
 tr {
     vertical-align: top;
 }
-
+tr > td.opFinish{
+    opacity: 25%;
+    background: #6b06745d;
+}
 .grading td:nth-child(1) {
     width: 2%;
     font-weight: bold;
