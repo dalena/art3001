@@ -38,7 +38,7 @@ html div.darkmode {
     text-shadow: 0 0 8px #00ffdd;
     font-size: 2rem;
     cursor: pointer;
-    
+
 }
 
 html.dark .darkmode .light,
@@ -103,7 +103,7 @@ h2.centFocus {
     color: #fff;
     text-align: center;
     margin-top: 2em;
-    margin-bottom:0;
+    margin-bottom: 0;
     transition: all 0.5s ease;
     font-family: 'Neuebit', sans-serif;
 
@@ -170,7 +170,7 @@ h4 {
 
 h1 {
     margin-bottom: 1em;
-    margin-top:0;
+    margin-top: 0;
     padding: 0;
     text-decoration: none;
     /* font-weight: normal; */
@@ -203,6 +203,7 @@ h4 {
     font-weight: normal;
     margin: 0;
 }
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -268,6 +269,7 @@ h5.sWorks {
 .hiSub {
     background: #6031b6;
 }
+
 .hiWeekly {
     background: #ffffff31;
     color: #8fb2ffec;
@@ -343,10 +345,12 @@ table {
 tr {
     vertical-align: top;
 }
-tr > td.opFinish{
+
+tr>td.opFinish {
     opacity: 25%;
     background: #6b06745d;
 }
+
 .grading td:nth-child(1) {
     width: 2%;
     font-weight: bold;
@@ -480,6 +484,11 @@ pre {
     right: -1.5em;
     bottom: -1.5em;
 }
+
+.sWorksPrint{
+    display: none;
+}
+
 
 .toggle {
     /* transition: height 0.5s ease; */
@@ -644,7 +653,10 @@ pre {
 
 @media print {
     html {
-        background: none;
+        background-image: none;
+        /* height: 100vh; */
+        /* filter: invert(100%); */
+
     }
 
     nav {
@@ -653,6 +665,10 @@ pre {
 
     body {
         font-size: 1em;
+        line-height: 1.5em;
+        background-image: none;
+        background-size: cover;
+        color: #000;
     }
 
     h1 {
@@ -660,18 +676,65 @@ pre {
         line-height: 1em
     }
 
-    .centFocus {
+    h2.centFocus {
         margin-top: 0;
+        margin-bottom: 1em;
+        color: #000;
     }
 
     a,
     button {
         background: none;
         border: none;
+        color: #000;
+        background: #00ffdddc;
+
+    }
+
+    .highlight {
+        color: #fff;
+    }
+
+    .hiWeekly {
+        background: #8fb2ff;
+        color: #000;
+    }
+    .hiDis, a.hiDis {
+        color: #000;
+    }
+
+    .sWorksPrint{
+        display: block;
+        text-align: center;
     }
 
     .headingText {
         justify-content: center;
+    }
+
+    .tg-0lax {
+        background: none;
+    }
+
+    tr>td.opFinish {
+        opacity: 1;
+        background: none;
+    }
+
+
+
+    #schedule .tg td {
+        border: solid #000000 .5px;
+        font-size: 16px;
+    }
+    #schedule .tg th {
+        border: solid #000000 .5px;
+    }
+
+
+
+    .noPrint {
+        display: none;
     }
 
     .print {
